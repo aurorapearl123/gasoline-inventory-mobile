@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_marginTop="150dp"
+        android:id="@+id/id_icon_login"
+        android:layout_width="300px"
+        android:layout_height="200px"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo"/>
+
+    <EditText
+        android:layout_centerInParent="true"
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:padding="4dip"
+        android:id="@+id/id_pin"
+        android:background="@drawable/rounded_text"
+        android:layout_below="@+id/id_icon_login"
+        android:drawableLeft="@drawable/lock"
+        android:drawableRight="@drawable/cancel"
+        android:singleLine="true"
+        android:textColor="#000000"
+        />
+    <Button
+        android:id="@+id/id_btn_login"
+        android:layout_marginLeft = "20dp"
+        android:layout_marginRight = "20dp"
+        android:layout_marginTop = "20dp"
+        android:layout_marginBottom = "20dp"
+        android:layout_width="300px"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id_pin"
+        android:background="@drawable/button_background"
+        android:text="Sign In"
+        android:textColor="#fff"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
